@@ -2,17 +2,17 @@
 
 Decidim.configure do |config|
   # The name of the application
-  config.application_name = "My Application Name"
+  config.application_name = "Tá Selado!"
 
   # The email that will be used as sender in all emails from Decidim
-  config.mailer_sender = "change-me@example.org"
+  config.mailer_sender = Rails.application.secrets.mailer_sender
 
   # Sets the list of available locales for the whole application.
   #
   # When an organization is created through the System area, system admins will
   # be able to choose the available languages for that organization. That list
   # of languages will be equal or a subset of the list in this file.
-  config.available_locales = [:en, :ca, :es]
+  config.available_locales = [:en, :pt]
 
   # Sets the default locale for new organizations. When creating a new
   # organization from the System area, system admins will be able to overwrite
@@ -35,12 +35,12 @@ Decidim.configure do |config|
   # Map and Geocoder configuration
   #
   # == HERE Maps ==
-  # config.maps = {
-  #   provider: :here,
-  #   api_key: Rails.application.secrets.maps[:api_key],
-  #   static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
-  # }
-  #
+  config.maps = {
+    provider: :here,
+    api_key: Rails.application.secrets.maps[:api_key],
+    static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
+  }
+
   # == OpenStreetMap (OSM) services ==
   # To use the OSM map service providers, you will need a service provider for
   # the following map servers or host all of them yourself:
@@ -107,6 +107,7 @@ Decidim.configure do |config|
 
   # Currency unit
   # config.currency_unit = "€"
+  config.currency_unit = 'R$ '
 
   # Defines the quality of image uploads after processing. Image uploads are
   # processed by Decidim, this value helps reduce the size of the files.

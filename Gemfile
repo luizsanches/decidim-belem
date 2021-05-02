@@ -4,12 +4,14 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.24.1"
-# gem "decidim-conferences", "0.24.1"
-# gem "decidim-consultations", "0.24.1"
-# gem "decidim-elections", "0.24.1"
-# gem "decidim-initiatives", "0.24.1"
-# gem "decidim-templates", "0.24.1"
+DECIDIM_VERSION = '0.24.1'
+
+gem "decidim", DECIDIM_VERSION
+# gem "decidim-conferences", DECIDIM_VERSION
+# gem "decidim-consultations", DECIDIM_VERSION
+# gem "decidim-elections", DECIDIM_VERSION
+gem "decidim-initiatives", DECIDIM_VERSION
+# gem "decidim-templates", DECIDIM_VERSION
 
 gem "bootsnap", "~> 1.3"
 
@@ -20,10 +22,19 @@ gem "faker", "~> 2.14"
 
 gem "wicked_pdf", "~> 1.4"
 
+gem 'devise-i18n'
+
+gem 'sidekiq'
+
+gem 'whenever', require: false
+
+gem 'virtus-multiparams'
+
 group :development, :test do
+  gem 'dotenv-rails', require: 'dotenv/rails-now'
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "decidim-dev", "0.24.1"
+  gem "decidim-dev", DECIDIM_VERSION
 end
 
 group :development do
