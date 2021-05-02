@@ -18,6 +18,8 @@ gem "bootsnap", "~> 1.3"
 gem "puma", ">= 5.0.0"
 gem "uglifier", "~> 4.1"
 
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
 gem "faker", "~> 2.14"
 
 gem "wicked_pdf", "~> 1.4"
@@ -29,7 +31,6 @@ gem 'sidekiq'
 gem 'whenever', require: false
 
 group :development, :test do
-  gem 'dotenv-rails', require: 'dotenv/rails-now'
   gem "byebug", "~> 11.0", platform: :mri
 
   gem "decidim-dev", DECIDIM_VERSION
