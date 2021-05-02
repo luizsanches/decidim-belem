@@ -28,8 +28,6 @@ gem 'sidekiq'
 
 gem 'whenever', require: false
 
-gem 'virtus-multiparams'
-
 group :development, :test do
   gem 'dotenv-rails', require: 'dotenv/rails-now'
   gem "byebug", "~> 11.0", platform: :mri
