@@ -45,6 +45,6 @@ RUN source .env.dockerbuild \
 
 EXPOSE 3000
 
-ENTRYPOINT ["/taselado/entrypoints.sh"]
+ENTRYPOINT ["sh", "./entrypoint.sh"]
 
 CMD ["bundle", "exec", "rails", "server", "-p", "3000", "-b", "0.0.0.0"]
