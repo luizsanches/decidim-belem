@@ -1,4 +1,7 @@
 FROM ruby:2.7.3-alpine3.13
+LABEL version="0.1"
+LABEL maintainer="www.cinbesa.com.br"
+LABEL maintainer="www.belem.pa.gov.br"
 
 WORKDIR /taselado
 
