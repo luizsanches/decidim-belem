@@ -1,0 +1,43 @@
+# https://github.com/decidim/decidim/blob/develop/decidim-meetings/config/locales/en.yml
+pt:
+  activemodel:
+    attributes:
+      meeting:
+        available_slots: Vagas disponíveis para esta reunião
+        type_of_meeting: Tipo
+        registration_type: Tipo de inscrição
+        type_of_meeting: Tipo
+  decidim:
+    meetings:
+      type_of_meeting:
+        hybrid: Ambas
+        in_person: Presencial
+        online: Virtual
+      registration_type:
+        on_different_platform: Em uma plataforma diferente
+        on_this_platform: Nesta plataforma
+        registration_disabled: Inscrição desativada
+      admin:
+        meetings:
+          form:
+            available_slots_help: Deixe o valor 0 se você tiver vagas ilimitadas disponíveis
+            location_hints_help: 'Exemplo: o andar do edifício se for uma reunião presencial, ou a senha da reunião se for uma reunião virtual com acesso restrito.'
+            select_a_meeting_type: Por favor, selecione um tipo de reunião
+            select_a_registration_type: Por favor, selecione um tipo de inscrição
+      meetings:
+        show:
+          back: Voltar à lista
+        filters:
+          activity: Minha atividade
+          all: Todas
+          my_meetings: Minhas reuniões
+          type: Tipo
+          date_values:
+            all: Todas
+          type_values:
+            all: Todas
+            hybrid: Ambas
+            in_person: Presencial
+            online: Virtual
+      versions:
+        back_to_resource: Voltar para a reunião

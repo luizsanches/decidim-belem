@@ -1,0 +1,9 @@
+pt:
+  decidim:
+    components:
+      comments:
+        title:
+          one: "%{count} comentário"
+          other: "%{count} comentários"
+        single_comment_warning: Pode consultar os comentários restantes <a href="%{url}">aqui</a>.
+        single_comment_warning_title: Está vendo um único comentário

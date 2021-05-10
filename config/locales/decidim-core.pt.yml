@@ -34,6 +34,16 @@ pt:
           register: Registrar
         sub_hero:
           register: Registrar
+    versions:
+      resource_version:
+        see_other_versions: ver outras versões
+    shared:
+      share_modal:
+        share: Compartilhar
+        share_link: Compartilhar link
+    follows:
+      create:
+        participatory_space: Seguir <span class="show-for-sr">%{resource_name}</span>
   devise:
     passwords:
       new:
