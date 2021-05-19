@@ -1,0 +1,17 @@
+# https://github.com/decidim/decidim/blob/develop/decidim-admin/config/locales/en.yml
+pt:
+  decidim:
+    admin:
+      dashboard:
+        show:
+          view_more_logs: Ver mais registros
+      impersonatable_users:
+        index:
+          view_logs: Ver registros
+      logs:
+        logs_list:
+          no_logs_yet: Ainda não há registros
+      menu:
+        admin_log: Registro de atividade de administração
+      titles:
+        admin_log: Registro de administrador

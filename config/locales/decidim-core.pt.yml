@@ -23,6 +23,9 @@ pt:
           nickname_help: Seu apelido em %{organization}. Só pode conter letras, números, '-' e '_'.
           password_help: "%{minimun_characters} caracteres no mínimo, não deverá ser muito comum (por ex. 123456) e deverá ser diferente de seu apelido e do seu e-mail."
           newsletter_title: Permissão de contato
+      sessions:
+        user:
+          timed_out: Você esteve inativo por muito tempo e foi automaticamente dispensado do serviço. Se você quiser continuar usando o serviço, por favor, entre novamente.
       shared:
         newsletter_modal:
           buttons:
