@@ -55,3 +55,8 @@ pt:
     shared:
       links:
         forgot_your_password: Esqueceu a sua senha?
+  forms:
+    length_validator:
+      minimum:
+        one: Pelo menos %{count} carácter
+        other: Pelo menos %{count} caracteres

@@ -1,7 +1,15 @@
 # https://github.com/decidim/decidim/blob/develop/decidim-admin/config/locales/en.yml
 pt:
+  activemodel:
+    attributes:
+      settings:
+        scope_id: Âmbito
   decidim:
     admin:
+      actions:
+        import: Importar
+        user:
+          new: Novo usuário
       dashboard:
         show:
           view_more_logs: Ver mais registros
@@ -13,5 +21,20 @@ pt:
           no_logs_yet: Ainda não há registros
       menu:
         admin_log: Registro de atividade de administração
+        dashboard: Painel de controle
+        moderation: Moderações globais
+        users: Usuários
       titles:
         admin_log: Registro de administrador
+        dashboard: Painel de Controle
+      imports:
+        import_from_file: Importar de um arquivo
+      components:
+        index:
+          headers:
+            scope: Âmbito do componente
+  layouts:
+    decidim:
+      admin:
+        global_moderations:
+          title: Moderações globais
