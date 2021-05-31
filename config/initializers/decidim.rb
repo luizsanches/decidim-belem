@@ -35,11 +35,11 @@ Decidim.configure do |config|
   # Map and Geocoder configuration
   #
   # == HERE Maps ==
-  config.maps = {
-    provider: :here,
-    api_key: Rails.application.secrets.maps[:api_key],
-    static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
-  }
+  #  config.maps = {
+  #    provider: :here,
+  #    api_key: Rails.application.secrets.maps[:api_key],
+  #    static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
+  #  }
 
   # == OpenStreetMap (OSM) services ==
   # To use the OSM map service providers, you will need a service provider for
@@ -73,6 +73,18 @@ Decidim.configure do |config|
   #   geocoding: { host: "nominatim.example.org", use_https: true }
   # }
   #
+  config.maps = {
+    provider: :osm,
+    dynamic: {
+      tile_layer: {
+        url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        attribution: %(
+          <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap</a> contributors
+        ).strip
+      }
+    }
+  }
+
   # == Combination (OpenStreetMap default + HERE Maps dynamic map tiles) ==
   # config.maps = {
   #   provider: :osm,
