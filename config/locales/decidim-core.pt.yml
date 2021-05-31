@@ -2,17 +2,21 @@
 pt:
   activemodel:
     attributes:
+      group:
+        nickname: Apelido
       user:
         nickname: Apelido
         email: O seu e-mail
         password: Senha
         password_confirmation: Confirme a sua senha
+      invite:
+        nickname: Apelido
   activerecord:
     attributes:
       decidim/user:
         current_password: Senha atual
         email: E-mail
-        name: Nome de usuário
+        name: Nome
         password: Senha
         password_confirmation: Confirmação da senha
         remember_me: Lembrar-me
@@ -65,6 +69,11 @@ pt:
     data_portability:
       show:
         download_data_description: Um arquivo contendo todas as informações associadas à sua conta será enviado para <strong>%{user_email}</strong>. Este e-mail conterá um arquivo .zip e uma senha para abri-lo.<br/><br/>Para descompactar o arquivo, você precisará do <a href="https://www.7-zip.org/">7-Zip</a> (para Windows) ou <a href="https://www.keka.io/">Keka</a> (para MacOS). Se você usa Linux, na maioria das vezes você o terá instalado por padrão. Caso contrário, você pode usar <a href="https://gitlab.gnome.org/GNOME/file-roller">File Roller</a> ou <a href="https://peazip.github.io">PeaZip</a>).
+    groups:
+      form:
+        nickname_help: Apelido da sua organização, associação, coletivo, grupo, etc. Não use espaços nem acentos.
+      new:
+        subtitle: Crie um grupo e convide outros usuários a aderir para participarem a um nível coletivo.
   devise:
     passwords:
       edit:
@@ -104,3 +113,5 @@ pt:
         continue_session: Continuar sessão
         sign_out: Sair
         title: Você gostaria de continuar sua sessão?
+      footer:
+        download_open_data: Baixar arquivos Open Data
